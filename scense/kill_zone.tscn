@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://drwkjtmhs8xtg"]
+
+[ext_resource type="Script" uid="uid://cj4onhi7is8fm" path="res://scripts/kill_zone.gd" id="1_ubmoy"]
+
+[node name="kill zone" type="Area2D" unique_id=1673493707]
+collision_mask = 2
+script = ExtResource("1_ubmoy")
+
+[node name="Timer" type="Timer" parent="." unique_id=1732469181]
+wait_time = 0.6
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
