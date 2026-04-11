@@ -7,5 +7,5 @@ func _on_body_entered(body):
 	timer.start()
 
 
-func _on_timer_timeout() -> void:
-	pass # Replace with function body.
+func _on_timer_timeout():
+	get_tree().reload_current_scene()
