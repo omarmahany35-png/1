@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://of1rjjvetgr0"]
 
 [ext_resource type="Texture2D" uid="uid://chi8r6o4a7c8f" path="res://assets/Gray.png" id="1_5ct0j"]
+[ext_resource type="Script" uid="uid://caxblfw8xflfh" path="res://scripts/game_manager.gd" id="1_xadiw"]
 [ext_resource type="Texture2D" uid="uid://c22k454i47lpg" path="res://assets/New folder/sprites/world_tileset.png" id="2_w8bpv"]
 [ext_resource type="PackedScene" uid="uid://dn1s3s0bn1p55" path="res://scense/player.tscn" id="3_1rj7w"]
 [ext_resource type="PackedScene" uid="uid://ca52busl311yr" path="res://scense/platform.tscn" id="4_xadiw"]
@@ -223,11 +224,26 @@ _data = {
 
 [node name="game" type="Node2D" unique_id=867218034]
 
+[node name="GameManager" type="Node" parent="." unique_id=1334265763]
+unique_name_in_owner = true
+script = ExtResource("1_xadiw")
+
+[node name="score lable" type="Label" parent="GameManager" unique_id=927040711]
+offset_left = 1603.0001
+offset_top = -114.0
+offset_right = 1703.8445
+offset_bottom = -39.0
+rotation = -0.0016666837
+text = "you collected 
+X coins!!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1226630929]
-offset_left = -1360.0
-offset_top = -490.0
-offset_right = 6714.0
-offset_bottom = 657.0
+offset_left = -1342.0
+offset_top = -491.0
+offset_right = 6732.0
+offset_bottom = 656.0
 texture = ExtResource("1_5ct0j")
 stretch_mode = 1
 
