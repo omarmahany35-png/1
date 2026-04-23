@@ -459,3 +459,12 @@ position = Vector2(1125, 55)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platforms/platform2" unique_id=811455251]
 libraries/ = SubResource("AnimationLibrary_1rj7w")
 autoplay = &"move"
+
+[node name="Label" type="Label" parent="." unique_id=88534604]
+offset_left = 3228.0
+offset_top = -233.0
+offset_right = 3564.0
+offset_bottom = -198.0
+theme_override_colors/font_color = Color(1, 0.14901961, 0.11372549, 1)
+theme_override_font_sizes/font_size = 25
+text = "congratulation,You made it!"
